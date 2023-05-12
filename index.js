@@ -50,14 +50,14 @@ Return: "Hello Jeffrey"
 
 
 
-function greeting(yourName) {
+/*function greeting(yourName) {
     
     let result = 'Hello' + ' ' + yourName;//string concatenation
     console.log(result);
 }
 
-let name = prompt('what is your name?');
-//greeting(name);
+//let name = prompt('what is your name?');
+/*greeting(name);
 
 //how do arguments work in funtions?
 //how to add 2 numbers in a function
@@ -93,4 +93,67 @@ console.log(total);
 //using Js to change html attributes
 
 onclick = "document.getElementById('myImage').src='bulbon.gif'";
-onclick = "document.getElementById(myImage).src='bulboff.gif'";
+onclick = "document.getElementById('myImage').src='bulboff.gif'";
+
+//using Js to change css
+
+onclick = "document.getElementById('demo').style.fontSize='35px'";
+
+//using Js to hide html elements
+
+onclick = "document.getElementById('demo').style.display='none'";
+
+//using Js to show hidden html elements
+
+onclick = "document.getElementById('demo').style.display='block'";
+
+/*you can place any number of scripts in an
+html doc
+*/
+
+//Js in <head>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+/*change in style, hidding elements were
+Js in <body>
+*/
+
+//data types
+let yourAge = 18; //number
+let yourName = 'Jeffrey'; //string
+let name =  {first: 'Dante', last: 'Mallowa'}; //object
+let truth =false; //boolean
+let groceries = ['apple', 'banana', 'oranges']; //array
+let random; //undefined
+let nothing = null; //value null
+
+//strings in Js
+let fruit = 'banana, apple, orange, blackberry';
+let moreFruits = 'banana\napple';  //new line
+
+//common string operations
+console.log(moreFruits);
+console.log(fruit.length);
+console.log(fruit.indexOf('nan'));
+console.log(fruit.slice(2,6));
+console.log(fruit.replace('ban', 'ojo'));
+console.log(fruit.toUpperCase());
+console.log(fruit.toLowerCase());
+console.log(fruit.charAt(3));
+console.log(fruit.split(',')); //split by comma
+console.log(fruit.split('')); //split by character
+
+
+//Array
+let fruits = ['banana', 'apple', 'orange', 'pineapples'];
+fruits = new Array('banana', 'apple', 'orange', 'pineapples');
+console.log(fruits[3]); //access value at index 3
+
+fruits[0] = 'pear';
+console.log(fruits);
+
+for (let index = 0; index < fruits.length; index++) {
+    console.log(fruits[index]);
+}
