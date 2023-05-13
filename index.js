@@ -95,17 +95,19 @@ console.log(total);
 onclick = "document.getElementById('myImage').src='bulbon.gif'";
 onclick = "document.getElementById('myImage').src='bulboff.gif'";
 
-//using Js to change css
+/*using Js to change css
 
-onclick = "document.getElementById('demo').style.fontSize='35px'";
+works inside the html index
 
-//using Js to hide html elements
+using Js to hide html elements
 
-onclick = "document.getElementById('demo').style.display='none'";
 
-//using Js to show hidden html elements
+works inside the html index
 
-onclick = "document.getElementById('demo').style.display='block'";
+using Js to show hidden html elements
+
+
+works inside the html index
 
 /*you can place any number of scripts in an
 html doc
