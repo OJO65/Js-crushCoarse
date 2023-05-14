@@ -204,3 +204,25 @@ function testFun(param1, param2) {
     console.log(param1, param2);
 }
 testFun("Hello", "world");
+
+function functionWithArgs(num1, num2) {
+    console.log(num1 + num2);
+}
+functionWithArgs(7, 9);
+
+//Return a value from a function with return
+
+function timesFive(num) {
+    return num * 5;
+}
+const result = timesFive(4);
+console.log(result);
+
+//Global scope and functions
+let myGlobal = 10; //declared a global variable outside a function & initialized it with 10
+function fun1() {
+    oopsGlobal = 5; //inside the function fun1, assigned 5 to oopsGlobal
+}
+fun1();
+console.log(myGlobal);
+console.log(oopsGlobal);
