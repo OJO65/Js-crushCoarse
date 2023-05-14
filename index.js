@@ -159,3 +159,48 @@ console.log(fruits);
 for (let index = 0; index < fruits.length; index++) {
     console.log(fruits[index]);
 }
+
+//Access Multi-Dimensional Arrays With Indexes
+const arr = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];
+const nestedSubarray = arr[3][0];
+const element = arr[3][0][1];
+
+console.log(subarray);
+console.log(nestedSubarray);
+console.log(element);
+
+//Manipulating Arrays with push method
+const myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+console.log(myArray);
+
+//Manipulate Arrays with pop method
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+
+//Manipulate Arrays with shift method
+ const ourArray = ["stimpson", "J", ["cat"]];
+ const removedFromOurArray = ourArray.shift();
+ console.log(myArray);
+ console.log(removedFromOurArray);
+
+ //Manipulate Arrays with unshift method
+ const isArray = ["stimpson", "J", "cat"];
+ isArray.shift();
+ isArray.unshift("Happy");
+ console.log(isArray);
+
+ //Passing values to functions with arguments
+function testFun(param1, param2) {
+    console.log(param1, param2);
+}
+testFun("Hello", "world");
