@@ -226,3 +226,51 @@ function fun1() {
 fun1();
 console.log(myGlobal);
 console.log(oopsGlobal);
+
+/*Local scope and functions
+function myTest() {
+    const loc = "foo";
+    console.log(loc);
+}
+
+myTest();
+console.log(loc); //error as it is not defined outside of the function
+*/
+
+/*Assignment with a Returned value
+let processed = 0;
+
+function processArg(num) {
+    return (num + 3) / 5;
+}
+
+processed = processArg(7);
+console.log(processed);
+*/
+
+//Stand in line
+function nextInLine(arr, item) {
+  
+    arr.push(item);//add a number at the end of the array
+    item = arr.shift();//remove the first element of the array
+    return item;//return the element that was removed
+    
+  }
+  
+  // Setup
+  let testArr = [1, 2, 3, 4, 5];
+  
+  // Display code
+  console.log("Before: " + JSON.stringify(testArr));
+  console.log(nextInLine(testArr, 6));
+  console.log("After: " + JSON.stringify(testArr));
+
+  //Use conditional Logic with if statements
+  function trueOrFalse(wasThatTrue) {
+    if (wasThatTrue) {
+        return "Yes, that was true";
+    }
+    return "No, that was false";
+  }
+  console.log(trueOrFalse(true));
+  console.log(trueOrFalse(false));
